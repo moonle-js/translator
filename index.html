@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <script src="./assets/javascript/script.js" defer></script>
+
+    <title>Translator</title>
+</head>
+<body>
+   
+    <header>
+        <div class="text">
+            <h1>
+                Translator by moonle-js
+            </h1>
+        </div>
+        <!-- Trigger for changing style for light and dark mode -->
+        <div class="modeOn">
+            <div class="trigger" id="trigger">
+
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- User side for adding text for translate -->
+        <section id="userSide">
+            <div class="userHead">
+                <div id="italic">
+                    Italic text
+                </div>
+                <div id="bond">
+                    Bond text
+                </div>
+                <div id="normal">
+                    Normal text
+                </div>
+            </div>
+            
+
+            <!-- Here will be the text that we want to translate -->
+            <div id="userMain">
+                <textarea name="text" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+        </section>
+
+        <section id="languages">
+            <select name="langFrom" id="langFrom">
+
+            </select>
+            <!-- Image with changing -->
+            <div id="changeIcon">
+
+            </div>
+
+            <select name="langTo" id="langTo">
+                
+            </select>
+        </section>
+
+
+        <!-- Bot side where we can view the result -->
+        <section id="botSide">
+            <div id="botInner"></div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>
+            All copyrights belongs to <small>moonle-js</small>
+        </h2>
+    </footer>
+
+</body>
+</html>
