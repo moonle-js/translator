@@ -1,0 +1,47 @@
+
+    .modeOn .trigger{
+        position: relative;
+        overflow: hidden;
+        width: 100px;
+        padding: 5px;
+        height: 40px;
+        background: var(--lightCyan);
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+        .modeOn .trigger #sunMoon{
+            width: 36px;
+            height: 36px;
+            transition: .4s all ease;
+        }
+
+
+
+        .modeOnMoon{
+            margin-left: 0;
+            background: url("../images/moon.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .modeOnSun{
+            background: url("../images/sun.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+
+        /* styles for whole page */
+
+.white_body{
+    background-color: var(--white);
+    color: var(--black);
+}
+.white_translate{
+    background-color: var(--lightBlack) !important;
+    color: var(--white) !important;
+}

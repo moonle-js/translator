@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/lightmode.css">
     
     <script src="./assets/javascript/script.js" defer></script>
+    <script src="./assets/javascript/lightmode.js" defer></script>
 
     <title>Translator</title>
 </head>
@@ -20,8 +22,13 @@
         </div>
         <!-- Trigger for changing style for light and dark mode -->
         <div class="modeOn">
-            <div class="trigger" id="trigger">
+            <div class="trigger" style="border: 2px solid var(--white);" id="trigger">
+                <div id="sunMoon" class="modeOnSun"></div>
 
+                <!-- clouds -->
+                <div class="cloud"></div>
+                <div class="cloud"></div>
+                <div class="cloud"></div>
             </div>
         </div>
 
@@ -45,7 +52,7 @@
 
             <!-- Here will be the text that we want to translate -->
             <div id="userMain">
-                <textarea name="text" id="textarea" cols="30" rows="10"></textarea>
+                <textarea class="textarea" name="text" id="textarea" cols="30" rows="10"></textarea>
             </div>
         </section>
 
